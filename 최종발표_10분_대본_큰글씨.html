@@ -1,0 +1,60 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>최종 발표 대본 · 천천히 약 10분</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#15232d;color:#edf5fa;font-family:"Malgun Gothic",sans-serif;--size:27px}header{padding:40px 32px 24px;max-width:1080px;margin:auto}h1{font-size:36px;color:#b9ddf4}header p{font-size:18px;color:#b9cbd8;line-height:1.7}.toolbar{position:sticky;top:0;z-index:10;padding:12px 24px;background:#203543;border-bottom:1px solid #527086;display:flex;gap:10px;align-items:center;flex-wrap:wrap}button,select{font:17px "Malgun Gothic";padding:9px 14px;color:#edf5fa;background:#304c60;border:1px solid #7190a5;border-radius:6px;cursor:pointer}main{max-width:1080px;margin:auto;padding:16px 24px 80px}section{padding:32px 28px;margin:28px 0 56px;background:#203543;border:1px solid #456277;border-radius:12px;scroll-margin-top:90px}h2{font-size:30px;line-height:1.5;margin:12px 0 28px}.meta{color:#afd8f2;font-size:18px;letter-spacing:.03em}.speech{font-size:var(--size);line-height:1.85;white-space:pre-line;margin:0 0 30px;word-break:keep-all;overflow-wrap:break-word}.key{font-size:calc(var(--size) * 1.25);font-weight:700;color:#ffdb91;border-left:5px solid #ffdb91;padding:18px 24px;background:#2b4150;margin:30px 0}.cue{font-size:19px;color:#a8dacf;background:#193d41;padding:14px 18px;border-radius:6px;line-height:1.6;margin:24px 0}.next{font-size:17px;color:#b9ddf4;text-align:right}a{color:#b9ddf4}button:focus-visible,select:focus-visible{outline:3px solid #ffdb91}@media(max-width:600px){body{--size:23px}section{padding:24px 16px}main{padding:10px}h1{font-size:30px}.toolbar{padding:8px}}@media print{@page{size:A4;margin:16mm}body{background:white;color:#172c3b;--size:16pt}header,.toolbar,.next{display:none}main{max-width:none;padding:0}section{background:white;border:0;border-radius:0;margin:0;padding:0;break-before:page}section:first-child{break-before:auto}h2{font-size:23pt}.meta{color:#345d78}.speech{line-height:1.65;margin-bottom:16pt;orphans:3;widows:3}.key{color:#174d70;background:#edf4f8;border-color:#174d70;font-size:20pt;padding:12pt;break-inside:avoid}.cue{font-size:12pt;color:#3a6566;background:#f1f5f5;break-inside:avoid}}</style></head><body><header><h1>최종 발표 대본<br>서울 패션상권 분석</h1><p>천천히 말하고 화면을 보여주는 시간을 포함해 약 10분을 목표로 합니다.<br>노란색 큰 문장은 강조해서 읽고, 초록색 안내는 소리 내어 읽지 않습니다.<br>대본은 9개 구간이며 상세 보고서 페이지는 각 구간 위에 표시했습니다.<br>예상 시간은 참고용입니다. 발표 전 한 번 소리 내어 읽어 확인하세요.</p></header><div class="toolbar"><select aria-label="발표 구간 이동" onchange="go(this.value)"><option value="s01">01. 표지 · 1쪽</option><option value="s02">02. 기획 배경과 목표 · 2쪽</option><option value="s03">03. 데이터와 처리 과정 · 3쪽</option><option value="s04">04. EDA에서 확인한 점 · 13쪽</option><option value="s05">05. 딥러닝을 적용한 이유와 결과 · 27쪽</option><option value="s06">06. 후보 상권을 어떻게 좁혔는가 · 29쪽</option><option value="s07">07. 매출 증가만으로 결정하지 않은 이유 · 33쪽</option><option value="s08">08. 상권별 상품 구성 제안 · 34쪽</option><option value="s09">09. 결론과 다음 단계 · 35쪽</option></select><button onclick="resize(-2)" aria-label="글씨 줄이기">글씨 −</button><span id="size">27px</span><button onclick="resize(2)" aria-label="글씨 키우기">글씨 ＋</button><button onclick="window.print()">인쇄 / PDF 저장</button></div><main><section id="s01"><div class="meta">01 / 09 · 상세 보고서 1쪽 · 약 50초</div><h2>표지</h2><p class="speech">안녕하세요.
+신규 패션 브랜드의 상품 전개를 위한
+서울시 상권 분석 프로젝트를 발표하겠습니다.</p><p class="speech">제가 기획하는 브랜드는 일상에서도, 자연에서도 입을 수 있는
+라이프스타일 아웃도어 브랜드입니다.
+주력 상품은 의류와 가방입니다.</p><p class="speech">이번 프로젝트는 이런 질문에서 시작했습니다.</p><p class="key speech">같은 브랜드라도 판매하는 상권에 따라
+가져가야 할 상품 구성이 다르지 않을까?</p><p class="speech">어디가 유명한지를 찾는 데서 그치지 않고,
+우리 상품을 어느 상권에서, 어떤 구성으로 먼저 보여줄지
+판단할 근거를 만들고자 했습니다.</p><p class="cue">잠깐 쉬고 다음 화면으로 넘깁니다.</p><div class="next"><a href="#s02">다음 대본 →</a></div></section><section id="s02"><div class="meta">02 / 09 · 상세 보고서 2쪽 · 약 1분 10초</div><h2>기획 배경과 목표</h2><p class="speech">시즌 전체 상품은 의류 약 30에서 40스타일,
+가방 약 30스타일을 생각하고 있습니다.</p><p class="speech">전체적으로는 두 품목의 구성이 비슷하지만,
+작은 팝업 공간에 모든 스타일을 가져갈 수는 없습니다.</p><p class="speech">그래서 상권에 따라 의류를 더 보여줄지, 가방의 비중을 높일지,
+경우에 따라 한 품목을 중심으로 전개할지 비교하고 싶었습니다.</p><p class="speech">초기 진입 방식은 상설 매장보다
+10평 미만의 팝업이나 단기 오프라인 전개를 가정했습니다.</p><p class="speech">다만 신규 브랜드이기 때문에
+우리 제품의 실제 판매 데이터는 없습니다.</p><p class="key speech">먼저 검토할 상권을 좁히고,
+그곳에 가져갈 상품 구성의 초기안을 제안하는 것이 목표입니다.</p><p class="speech">매출이나 최적 비율을 확정하려는 분석은 아닙니다.</p><p class="cue">‘상권 선정’과 ‘상품 구성’을 강조하고 잠깐 쉽니다.</p><div class="next"><a href="#s03">다음 대본 →</a></div></section><section id="s03"><div class="meta">03 / 09 · 상세 보고서 3쪽 · 약 1분</div><h2>데이터와 처리 과정</h2><p class="speech">분석에는 서울시 상권분석서비스의
+2021년부터 2025년까지 자료를 활용했습니다.</p><p class="speech">일반의류와 가방 업종을 중심으로,
+매출과 소비 연령에 유동인구, 상주인구, 직장인구,
+점포 현황을 연결했습니다.</p><p class="key speech">이 과정에서 중요하게 본 것은
+비교 기준을 맞추는 것이었습니다.</p><p class="speech">같은 상권 코드와 같은 분기를 기준으로 자료를 연결하고,
+분석 대상에 해당하지 않는 업종과 상권 유형을 제외했습니다.</p><p class="speech">그 결과 EDA, 즉 데이터를 탐색하고 비교하는 단계에서는
+약 1만 8천6백 행을 사용했습니다.</p><p class="speech">자료가 없는 부분을 매출이 없는 것으로 처리하지 않았고,
+연도별 추세를 비교할 때는
+같은 상권이 계속 관측되는지도 확인했습니다.</p><p class="cue">표의 행 수 변화를 가리킵니다. 숫자를 전부 읽지 않습니다.</p><div class="next"><a href="#s04">다음 대본 →</a></div></section><section id="s04"><div class="meta">04 / 09 · 상세 보고서 13쪽 · 약 1분 10초</div><h2>EDA에서 확인한 점</h2><p class="speech">이 화면은 2025년의 매출 규모와
+소비 연령 구성을 함께 보여줍니다.</p><p class="speech">왼쪽은 연령대별 매출 비중이고,
+오른쪽은 비교 집단의 매출 규모입니다.</p><p class="cue">그래프와 표를 차례로 가리키고 잠깐 쉽니다.</p><p class="speech">분석하면서 확인한 것은,
+상권 유형에 따라 의류와 가방의 매출 규모도 다르고
+소비 연령의 구성도 다르다는 점입니다.</p><p class="speech">그래서 서울의 패션 상권을
+하나의 고객층으로 묶어 보기 어렵다고 판단했습니다.</p><p class="speech">특히 가방은 의류보다 관측되는 상권이 적어
+해석에 더 주의가 필요했습니다.</p><p class="key speech">가방 자료가 없다는 이유만으로
+그 상권에서는 가방이 팔리지 않는다고 결론 내릴 수는 없습니다.</p><p class="speech">이런 차이를 확인한 뒤,
+큰 상권 유형 비교에서 개별 상권 비교로 분석을 좁혀갔습니다.</p><div class="next"><a href="#s05">다음 대본 →</a></div></section><section id="s05"><div class="meta">05 / 09 · 상세 보고서 27쪽 · 약 1분 10초</div><h2>딥러닝을 적용한 이유와 결과</h2><p class="speech">과거 매출과 상권 환경을 함께 활용하면,
+다음 분기 매출을 비교하는 데 도움이 될지 확인하고자
+신경망 모델도 적용했습니다.</p><p class="speech">다만 복잡한 모델을 사용하는 것 자체가 목적은 아니었습니다.</p><p class="speech">과거 매출을 활용하는 단순한 기준모델과 비교해서
+실제로 오차가 줄어드는지를 확인했습니다.</p><p class="key speech">결과적으로 신경망이 기준모델보다
+더 우수하다고 말할 근거는 확인하지 못했습니다.</p><p class="cue">이 문장 뒤에서 잠깐 쉽니다.</p><p class="speech">그래서 모델의 예측값을 정답처럼 사용하지 않았습니다.</p><p class="speech">이번 프로젝트에서는 관측된 매출과 소비 특성을 중심으로 판단하고,
+예측 실험은 참고 근거로 활용했습니다.</p><p class="speech">이 결과도 중요한 확인이라고 생각합니다.
+모델이 복잡해졌다는 이유만으로
+사업 판단의 신뢰도가 높아지는 것은 아니기 때문입니다.</p><div class="next"><a href="#s06">다음 대본 →</a></div></section><section id="s06"><div class="meta">06 / 09 · 상세 보고서 29쪽 · 약 1분 20초</div><h2>후보 상권을 어떻게 좁혔는가</h2><p class="speech">후보는 두 그룹으로 나눴습니다.</p><p class="key speech">첫 번째는 매출 근거를 중심으로 비교할
+핵심 상권 네 곳입니다.</p><p class="speech">한강진역 3번 출구 상권, 성수역 상권,
+명동거리, 가로수길입니다.</p><p class="key speech">두 번째는 새로운 가능성을 추가로 조사할
+상권 두 곳입니다.</p><p class="speech">혜화동주민센터 상권과 한강로동 땡땡거리입니다.</p><p class="cue">화면에서 두 그룹을 구분해 가리킵니다.</p><p class="speech">이 여섯 곳을 모두 같은 수준으로 추천한 것은 아닙니다.</p><p class="speech">핵심 네 곳은 관측된 매출을 바탕으로
+공간과 상품 조건을 비교할 대상입니다.</p><p class="speech">조사 대상 두 곳은 방문 인구나 주변 소비 변화에서 가능성을 살펴보되,
+우리 제품의 구매로 연결될지는 더 확인해야 하는 곳입니다.</p><p class="speech">또한 여기서 말하는 상권은 서울시 데이터의 개별 상권 단위입니다.
+성수나 한남 전체 지역을 대표하는 결과로 확대해서 보지는 않았습니다.</p><div class="next"><a href="#s07">다음 대본 →</a></div></section><section id="s07"><div class="meta">07 / 09 · 상세 보고서 33쪽 · 약 1분 10초</div><h2>매출 증가만으로 결정하지 않은 이유</h2><p class="speech">후보를 비교할 때는 좋은 신호와 불리한 신호를 함께 봤습니다.</p><p class="speech">예를 들어 한강진역 3번 출구 상권에서는
+이번 기준상 매출과 유동인구가 함께 회복하는 신호가 관측됐습니다.</p><p class="speech">반면 성수역과 가로수길은
+매출 변화와 유동인구 변화가 같은 방향으로 움직이지 않았습니다.</p><p class="key speech">매출이 늘었으니 젊은 고객도 늘었을 것이라고
+해석하지 않았습니다.</p><p class="speech">새롭게 조사하는 상권도 마찬가지입니다.
+방문이 늘어나는 것과 우리 의류나 가방을 구매하는 것은 다른 문제입니다.</p><p class="speech">이번에는 후보마다 유리한 근거와 반대 근거를 함께 기록해서,
+왜 검토 대상인지, 무엇이 아직 부족한지 보이도록 정리했습니다.</p><p class="cue">표 전체를 설명하지 말고 다음 화면으로 넘깁니다.</p><div class="next"><a href="#s08">다음 대본 →</a></div></section><section id="s08"><div class="meta">08 / 09 · 상세 보고서 34쪽 · 약 1분 10초</div><h2>상권별 상품 구성 제안</h2><p class="speech">이 분석을 실제 기획과 연결한 부분이 상품 구성안입니다.</p><p class="speech">시즌 전체 개발 구성은 유지하되,
+각 팝업에 가져갈 스타일을 다르게 선별하는 방식입니다.</p><p class="speech">현재 비교안으로는 일부 핵심 상권에서
+의류 12스타일, 가방 8스타일,
+명동거리에서는 의류와 가방을 각각 10스타일씩 구성하는 예시를 제시했습니다.</p><p class="key speech">다만 이 숫자는
+데이터가 계산해 준 최적 비율이 아닙니다.</p><p class="speech">공간과 고객 특성을 검토하기 위한 초기 기획안입니다.</p><p class="speech">가방 자료가 부족한 상권에 가방 중심 구성을 확정하지 않았고,
+조사 대상 두 곳은 품목과 비율을 아직 정하지 않았습니다.</p><p class="speech">이번 단계에서는 숫자를 확정하는 것보다,
+각 구성안을 어떤 근거로 비교할지 정리하는 데 의미를 두었습니다.</p><div class="next"><a href="#s09">다음 대본 →</a></div></section><section id="s09"><div class="meta">09 / 09 · 상세 보고서 35쪽 · 약 50초</div><h2>결론과 다음 단계</h2><p class="speech">이번 프로젝트를 통해 서울의 여러 상권을 비교하고,
+우선 검토할 후보와 추가 조사가 필요한 후보를 구분했습니다.</p><p class="speech">또한 상권별 상품 구성을 제안하면서,
+확인된 데이터와 아직 검증되지 않은 기획 가설을 나눠 정리했습니다.</p><p class="speech">다음 단계에서는 후보 공간의 실제 비용과 진열 조건,
+브랜드 가격대와의 적합성을 확인해
+상품 구성을 더 좁힐 계획입니다.</p><p class="key speech">우리 브랜드가 어디서 어떤 상품으로 시작할지
+설명할 수 있는 근거를 만들고자 했습니다.</p><p class="speech">이상으로 발표를 마치겠습니다.
+감사합니다.</p><p class="cue">청중을 보고 인사합니다.</p></section></main><script>let size=27;function resize(n){size=Math.max(20,Math.min(40,size+n));document.body.style.setProperty('--size',size+'px');document.getElementById('size').textContent=size+'px'}function go(v){document.getElementById(v).scrollIntoView()}</script></body></html>
